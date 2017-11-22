@@ -169,6 +169,37 @@ html {
   top: 210px;
 }
 
+.fullscreen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255, 0.7);
+  z-index: 1;
+}
+
+.fullscreen img {
+  display: block;
+  margin: 50px auto;
+  width: 800px;
+  height: 800px;
+}
+
+.fullscreen .close {
+  margin: auto;
+  display: block;
+  background-color: #28cfb5;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 150px;
+}
+
 .boxes {
   margin-top: 18px;
   margin-left: 18px;

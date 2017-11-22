@@ -54,6 +54,70 @@ document.addEventListener("DOMContentLoaded", function () {
   function mouseOut() {
     this.firstElementChild.style.display = "none";
   }
+  
+  //----------------WINDOW-----------------------------
+  
+  var body = document.querySelector('body');
+  var photos = body.querySelectorAll('.slider-image>ul li');
+  
+  console.log(photos);
+  
+  for(var i =0; i<photos.length; i++){
+    photos[i].addEventListener('click', fullScreen);
+  }
+  
+  function fullScreen(){
+//    console.log(this.firstElementChild.getAttribute('src'));
+    var imgUrl = this.firstElementChild.getAttribute('src');
+    var newDiv = document.createElement('div');
+    
+    newDiv.classList.add('fullscreen');
+    newDiv.innerHTML = 
+      "<img src='" + imgUrl + "'><button class='close'>CLOSE</button>";
+    body.appendChild(newDiv);
+    var tempButt = body.querySelector('.close');
+    tempButt.addEventListener('click', function(){
+      this.parentNode.remove(this);
+    })
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 
